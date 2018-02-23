@@ -20,9 +20,9 @@ subport hackrf-devel {}
 if {${subport} eq ${name}} {
 
     # release
-    github.setup        mossmann hackrf 2017.02.1 v
-    checksums           rmd160 8437d618c974f507550ec526c037c6b08d0af9f4 \
-                        sha256 74c7a046f076feb18f4996de8856020d683a2ca9ef07df34c6f1542f3601a461
+    github.setup        mossmann hackrf 2018.01.1 v
+    checksums           rmd160 97e9e7ca94f91ba898dd9a20a56aa3843688be64 \
+                        sha256 e7ee6e09c1e0d2498cfdc974047cbe42177d3d6688a106be283d67d36051a155
 
     # bump the epoch because I moved the version from 20170219 to 2017.02.1
     epoch               1
@@ -30,10 +30,10 @@ if {${subport} eq ${name}} {
 } else {
 
     # devel
-    github.setup        mossmann hackrf 3447863a8b0e6c4e428fc1d44b16fac993598a0b
-    version             20171207
-    checksums           rmd160 1ffdae75f2009853e8ee9cc933ca3c7024161699 \
-                        sha256 f371655447ed1fdfd7bf62be9a3a07f3163981137ea22a4315e3940f32bab4a3
+    github.setup        mossmann hackrf d17f091736e43e3d9227d15ada9c111a1857bcdb
+    version             20180217
+    checksums           rmd160 11afe3120357543ca9e84a26649bc389cdf24edb \
+                        sha256 5cf16f3823061a0c0e119b9d7b5cd71fe4b0bd0eb8eb058ae5d3fe77ef2e69ff
 
 }
 

@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           perl5 1.0
 
 perl5.branches      5.24 5.26
-perl5.setup         Mouse v2.5.0 ../../authors/id/S/SK/SKAJI
+perl5.setup         Mouse v2.5.2 ../../authors/id/S/SK/SKAJI
 license             {Artistic-1 GPL}
 maintainers         nomaintainer
 description         Moose minus the antlers
@@ -18,8 +18,9 @@ long_description    Moose is wonderful. \
 
 platforms           darwin
 
-checksums           rmd160  f6054f1ae66dd9c46f3c4ba45fc64ea2f5281b02 \
-                    sha256  92cbc72138b4e734eea56dc3f5f8cb926388ffb37e61c69612615a104e87b010
+checksums           rmd160  a15d15b0df266420c513a92505c96c7a4ca4f18e \
+                    sha256  7ad158a09ce754b1ef3bc75262f7fbba85c4e9d917fdd8b1c0873b260611d99e \
+                    size    219289
 
 if {${perl5.major} != ""} {
     depends_build-append \

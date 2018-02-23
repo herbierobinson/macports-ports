@@ -6,9 +6,9 @@ PortGroup           github  1.0
 PortGroup           qt5     1.0
 
 name                qgis3
-set commit          d58053d
+set commit          36bf093
 github.setup        qgis QGIS ${commit}
-version             2.99.20171227
+version             2.99.20180124
 categories          gis
 maintainers         vince
 description         QGIS 3 is a user-friendly GIS based on Qt 5
@@ -27,8 +27,8 @@ patchfiles          patch-app_info_plist_in.diff \
                     patch-CMakelists_txt.diff \
                     patch-FindPyQt5_py.diff
 
-checksums           rmd160  6ad620896f9b64af84a71af68ff2ca8c65719def \
-                    sha256  cf128ce03b7ab0a832ec98655f5eb1260d209405aa7be19c39f92eb6226a9ed3
+checksums           rmd160  d53c504d41960b547e407e1922e1c1b3d876629a \
+                    sha256  17fa868f00f30184431e219f41fcb785d818e5ba89678dc9ec2ad9630c83237f
 
 worksrcdir          QGIS-${commit}
 
@@ -102,7 +102,7 @@ configure.args-append   "-DWITH_QWTPOLAR=ON"
 configure.args-append   "-DQT_LRELEASE_EXECUTABLE=${prefix}/libexec/qt5/bin/lrelease"
 
 # Server does not build so far
-configure.args-append   "-DWITH_SERVER=FALSE"
+configure.args-append   "-DWITH_SERVER=OFF"
 
     
 # Database variants (from the GDAL port)

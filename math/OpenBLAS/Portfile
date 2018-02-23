@@ -19,23 +19,16 @@ archive_sites
 subport OpenBLAS-devel {}
 if {[string first "-devel" $subport] > 0} {
 
-    github.setup    xianyi OpenBLAS 893bd14e924fa72a4ed345a75d64c637f1b1c550
-    version         20171213
-    checksums       rmd160 32c9012ebd101ec808ebb2e1c82178d96a9122f1 \
-                    sha256 bc969d805065862c4a6cc42a375e729e40c29be7b93895de4015d3d14559c651
+    github.setup    xianyi OpenBLAS 6c0f79b787b26278ddc5758083214d648ae5df8a
+    version         20180218
+    checksums       rmd160 e441971b17067efb287be6fbaee6e55ed6816daf \
+                    sha256 8e948c01905cd7bfe8a8ae080fddeb4689176541c87c3f719128ac5280bbdcf6
 
     name            ${github.project}-devel
     conflicts       OpenBLAS
 
     patchfiles      patch-libnoarch.devel.diff \
                     patch-linkLib.devel.diff
-
-    # fix for commit 3be5c3d3, which split $(AR) creation into parts,
-    # but some of those parts might be empty, which OSX's $(AR)
-    # doesn't handle robustly. Recombine back into a single very long
-    # $(AR), which it handles robustly.
-    patchfiles-append \
-                    patch-lapack-netlib_LAPACKE_src_Makefile.devel.diff
 
     livecheck.url   ${github.homepage}/commits/develop.atom
 

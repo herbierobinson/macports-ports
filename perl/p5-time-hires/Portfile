@@ -4,7 +4,7 @@ PortSystem          1.0
 PortGroup           perl5 1.0
 
 perl5.branches      5.24 5.26
-perl5.setup         Time-HiRes 1.9750
+perl5.setup         Time-HiRes 1.9754
 license             {Artistic-1 GPL}
 maintainers         nomaintainer
 description         perl5 module implementing High resolution time, sleep, and alarm
@@ -12,5 +12,6 @@ long_description    ${description}
 
 platforms           darwin
 
-checksums           rmd160  6ffd9ebe8c7174ce64824025860f798e36058753 \
-                    sha256  15e734495bdca9ead6ded4ad28d289392476dc0c5da050816c2aafb06b9df82f
+checksums           rmd160  9d7dc34ba8a074b878318013b99a2b1b27752051 \
+                    sha256  6654c007b2d597f863a0bb2ed69c639f0d552f598e35cf474fc6e89b9225b063 \
+                    size    110989
